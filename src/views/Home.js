@@ -10,13 +10,13 @@ const Wrapper = styled.div`
 `
 
 export default ({ fields }) => {
-  const { intro } = fields
+  const { intro, aData, bData, cData, dData, eData, fData } = fields
   return (
     <main className='Home'>
       <Wrapper>
         <TextHeadline width='70%' align='left' subheadline={intro} />
-        <Mosaic aData='1' bData='2' cData='3' />
-        <Mosaic layout='reverse' aData='1' bData='2' cData='3' />
+        <Mosaic aData={aData} bData={bData} cData={cData} />
+        <Mosaic layout='reverse' aData={dData} bData={eData} cData={fData} />
       </Wrapper>
     </main>
   )

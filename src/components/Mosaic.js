@@ -20,6 +20,8 @@ export default class Mosaic extends Component {
     const One = styled.div`
       background: gray;
       grid-area: a;
+      background-size: cover;
+      background-position: center;
       @media ${device.laptop} {
       }
     `
@@ -27,12 +29,16 @@ export default class Mosaic extends Component {
     const Two = styled.div`
       background: gray;
       grid-area: b;
+      background-size: cover;
+      background-position: center;
       @media ${device.laptop} {
       }
     `
     const Three = styled.div`
       background: gray;
       grid-area: c;
+      background-size: cover;
+      background-position: center;
       @media ${device.laptop} {
       }
     `
@@ -44,9 +50,11 @@ export default class Mosaic extends Component {
     return (
       <div style={{ flexDirection: row }} className='flex-container'>
         <Container>
-          <One>{props.aData}</One>
-          <Two>{props.bData}</Two>
-          <Three>{props.cData}</Three>
+          <One style={{ backgroundImage: 'url(' + props.aData + ')' }}>a</One>
+          <Two style={{ backgroundImage: 'url(' + props.bData + ')' }}>b</Two>
+          <Three style={{ backgroundImage: 'url(' + props.cData + ')' }}>
+            c
+          </Three>
         </Container>
       </div>
     )

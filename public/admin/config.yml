@@ -41,6 +41,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Block A, name: aData, widget: image}
           - {label: Block B, name: bData, widget: image}
           - {label: Block C, name: cData, widget: image}
+          - {label: Block D, name: dData, widget: image}
+          - {label: Block E, name: eData, widget: image}
+          - {label: Block F, name: fData, widget: image}
           - label: "Meta"
             required: false
             name: "meta"
