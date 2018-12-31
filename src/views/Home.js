@@ -1,25 +1,27 @@
 import React from 'react'
-
+import styled from 'styled-components'
 import Content from '../components/Content'
-import PageHeader from '../components/PageHeader'
-import './Home.css'
+import TextHeadline from '../components/TextHeadline'
+import Mosaic from '../components/Mosaic'
+
+const Wrapper = styled.div`
+  margin: 0 auto;
+  width: 90%;
+`
 
 export default ({ fields }) => {
   const { title, subtitle, featuredImage, body } = fields
   return (
     <main className='Home'>
-      <PageHeader
-        large
-        title={title}
-        subtitle={subtitle}
-        backgroundImage={featuredImage}
-      />
-
-      <div className='section'>
-        <div className='container'>
-          <Content source={body} />
-        </div>
-      </div>
+      <Wrapper>
+        <TextHeadline
+          width='70%'
+          align='left'
+          subheadline='Tyler is a multi-discplinary artist specializing in web development, user experience design and brand identity acting as lead developer at GGMM in Milwaukee, WI. Other active projects include One Hot Pod, Portrait Project, and an untitled board game project amongst other things.'
+        />
+        <Mosaic aData='1' bData='2' cData='3' />
+        <Mosaic layout='reverse' aData='1' bData='2' cData='3' />
+      </Wrapper>
     </main>
   )
 }

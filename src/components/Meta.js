@@ -49,6 +49,12 @@ const Meta = props => {
       {twitterCreatorAccount && (
         <meta name='twitter:creator' content={twitterCreatorAccount} />
       )}
+      <link
+        rel='stylesheet'
+        href='https://pro.fontawesome.com/releases/v5.1.0/css/all.css'
+        integrity='sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs'
+        crossOrigin='anonymous'
+      />
       {noindex && <meta name='robots' content='noindex' />}
       {canonicalLink && <link rel='canonical' href={canonicalLink} />}
     </Helmet>
