@@ -37,10 +37,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page"
         name: "home-page"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: markdown}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Intro, name: intro, widget: string}
           - label: "Meta"
             required: false
             name: "meta"
