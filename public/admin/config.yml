@@ -34,10 +34,13 @@ collections: # A list of collections the CMS should be able to edit
 
 
       - file: "content/pages/home.md"
-        label: "Home Page"
-        name: "home-page"
+        label: "Home"
+        name: "home"
         fields:
-          - {label: Intro, name: intro, widget: string}
+          - {label: Intro, name: intro, widget: text}
+          - {label: Block A, name: aData, widget: image}
+          - {label: Block B, name: bData, widget: image}
+          - {label: Block C, name: cData, widget: image}
           - label: "Meta"
             required: false
             name: "meta"
