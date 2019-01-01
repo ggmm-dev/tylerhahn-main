@@ -36,7 +36,8 @@ collections: # A list of collections the CMS should be able to edit
         label: "Portraits"
         name: "portraits"
         widget: "list"
-        fields: {label: Image, name: image, widget: image}
+        fields:
+          - {label: Image, name: image, widget: image}
 
       - file: "content/pages/home.md"
         label: "Home"
