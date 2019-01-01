@@ -33,11 +33,10 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Noindex, name: noindex, widget: boolean, required: false}
 
       - file: "content/pages/portrait.md"
-        label: "Portraits"
-        name: "portraits"
+        label: "Gallery"
+        name: "galleryImages"
         widget: "list"
-        fields:
-          - {label: Image, name: image, widget: image}
+        field: {label: Image, name: image, widget: image}
 
       - file: "content/pages/home.md"
         label: "Home"
